@@ -5,7 +5,7 @@
 
 具体效果如下：
 
-![瀑布流式的标签列表](http://img.blog.csdn.net/20160323173809831)
+http://img.blog.csdn.net/20160323173809831
 
 ##原理讲解
 
@@ -13,7 +13,7 @@
 
 在这里，将整个瀑布流式的标签列表进行划分，如图：
 
-![这里写图片描述](http://img.blog.csdn.net/20160323174523348)
+http://img.blog.csdn.net/20160323174523348
 
 从上图可以看出，外面是LinearLayout容器，排列方式是垂直，
 内部是一个个LinearLayout，排列方式是水平，内部的LinearLayout就是用来存放我们的标签。
