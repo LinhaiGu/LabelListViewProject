@@ -43,7 +43,7 @@ public class GradientTextView {
 	 * 初始化标签
 	 */
 	private void initLabelTextView() {
-		mLabelTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, 20);
+		mLabelTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
 		mLabelTextView.setPadding(dip2px(5), dip2px(4), dip2px(4), dip2px(5));
 	}
 
@@ -140,7 +140,7 @@ public class GradientTextView {
 	}
 
 	public GradientTextView setTextSize(int size) {
-		mLabelTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, size);
+		mLabelTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, size);
 		return this;
 	}
 
