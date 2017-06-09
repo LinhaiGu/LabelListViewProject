@@ -86,7 +86,10 @@ public abstract class BaseLabelListView<T> extends LinearLayout implements
 		mDatas.clear();
 
 		mDatas.addAll(_datas);
+		
+		removeAllViews();
 
+		addLabelList(mDatas);
 	}
 
 	int groupWidth;
@@ -98,6 +101,7 @@ public abstract class BaseLabelListView<T> extends LinearLayout implements
 		groupWidth = getMeasuredWidth() - getPaddingLeft() - getPaddingRight();
 		if (groupWidth > 0 && isFirst) {
 			isFirst = false;
+			removeAllViews();
 			addLabelList(mDatas);
 		}
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
